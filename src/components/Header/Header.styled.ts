@@ -28,20 +28,18 @@ export const MenuIcon = styled.div`
   background: ${(props) => props.theme.colors.secondary};
   position: relative;
 
-  &::after {
+  &::after,
+  &::before {
     position: absolute;
     content: '';
-    top: -8px;
     width: 32px;
     height: 2px;
     background: ${(props) => props.theme.colors.secondary};
   }
+  &::after {
+    top: -8px;
+  }
   &::before {
-    position: absolute;
-    content: '';
     top: 8px;
-    width: 32px;
-    height: 2px;
-    background: ${(props) => props.theme.colors.secondary};
   }
 `;
