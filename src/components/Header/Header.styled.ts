@@ -3,13 +3,14 @@ import styled from 'styled-components';
 export const Logo = styled.div`
   display: flex;
   column-gap: 25px;
+
   p {
     font-family: 'Forum';
     font-size: 16px;
     line-height: 18px;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: ${({theme}) => theme.colors.secondary};
   }
 `;
 
@@ -36,9 +37,11 @@ export const MenuIcon = styled.div`
     height: 2px;
     background: ${(props) => props.theme.colors.secondary};
   }
+
   &::after {
     top: -8px;
   }
+
   &::before {
     top: 8px;
   }
