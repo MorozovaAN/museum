@@ -4,43 +4,37 @@ import slide3 from '../../assets/images/slider/3.webp';
 import slide4 from '../../assets/images/slider/4.webp';
 import slide5 from '../../assets/images/slider/5.webp';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { NexArrow, PrevArrow, SliderEl } from './Slider.styled';
+import { Dot, NexArrow, PrevArrow, SliderEl } from './Slider.styled';
 import { Carousel } from 'react-responsive-carousel';
-import { indicatorHandlerTypes } from './Slider.types';
 
 export const Slider = () => {
-  const statusHandler = (currentItem: number, total: number) =>
-    `0${currentItem} ❘ 0${total}`;
-
-  const indicatorHandler = (handler: indicatorHandlerTypes) => (
-    <li>
-      <button onClick={handler}></button>
-    </li>
-  );
-
   return (
     <SliderEl>
       <Carousel
         renderThumbs={() => []}
-        statusFormatter={statusHandler}
-        renderIndicator={indicatorHandler}
+        statusFormatter={(currentItem, total) => `0${currentItem} ❘ 0${total}`}
+        renderIndicator={(handler) => (
+          <li>
+            <Dot onClick={handler}></Dot>
+          </li>
+        )}
         renderArrowNext={(handler) => <NexArrow onClick={handler}></NexArrow>}
         renderArrowPrev={(handler) => <PrevArrow onClick={handler}></PrevArrow>}
       >
         <div>
-          <img src={slide1} alt="picture1" />
+          <img src={slide1} alt="Mona Lisa" />
         </div>
         <div>
-          <img src={slide2} alt="picture2" />
+          <img src={slide2} alt="Liberty Leading the People" />
         </div>
         <div>
-          <img src={slide3} alt="picture3" />
+          <img src={slide3} alt="La Belle Ferronnière" />
         </div>
         <div>
-          <img src={slide4} alt="picture4" />
+          <img src={slide4} alt="The Raft of the Medusa" />
         </div>
         <div>
-          <img src={slide5} alt="picture5" />
+          <img src={slide5} alt="The Astronomer, Vermeer" />
         </div>
       </Carousel>
     </SliderEl>
