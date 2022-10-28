@@ -8,7 +8,7 @@ export const Title = styled.h1`
   text-align: center;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const PromoEl = styled.section`
@@ -21,7 +21,7 @@ export const Description = styled.p`
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 2px;
-  color: #ffffff;
+  color: ${({ theme }) => theme.colors.secondary};
   text-align: center;
   margin-top: 25px;
   margin-bottom: 50px;

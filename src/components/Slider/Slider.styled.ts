@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { Carousel } from 'react-responsive-carousel';
 import arrow from '../../assets/images/slider/slider-arrow.svg';
 
-export const SliderEl = styled(Carousel)`
+export const SliderEl = styled.div`
   .carousel-slider {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -19,6 +18,10 @@ export const SliderEl = styled(Carousel)`
     grid-column: 1/2;
     grid-row: 2/3;
     justify-self: end;
+    font-size: 16px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: ${({ theme }) => theme.colors.secondary};
   }
 
   .control-dots {
@@ -34,7 +37,7 @@ export const SlideNumber = styled.p`
   font-size: 16px;
   line-height: 40px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: ${({ theme }) => theme.colors.secondary}; ;
 `;
 
 const SliderArrow = styled.button`
