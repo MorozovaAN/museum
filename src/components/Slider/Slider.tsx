@@ -4,7 +4,7 @@ import slide3 from '../../assets/images/slider/3.webp';
 import slide4 from '../../assets/images/slider/4.webp';
 import slide5 from '../../assets/images/slider/5.webp';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { Dot, NexArrow, PrevArrow, SliderEl } from './Slider.styled';
+import { NexArrow, PrevArrow, SliderEl } from './Slider.styled';
 import { Carousel } from 'react-responsive-carousel';
 
 export const Slider = () => {
@@ -13,11 +13,6 @@ export const Slider = () => {
       <Carousel
         renderThumbs={() => []}
         statusFormatter={(currentItem, total) => `0${currentItem} ❘ 0${total}`}
-        // renderIndicator={(handler) => (
-        //   <li>
-        //     <Dot onClick={handler}></Dot>
-        //   </li>
-        // )}
         renderArrowNext={(handler) => <NexArrow onClick={handler}></NexArrow>}
         renderArrowPrev={(handler) => <PrevArrow onClick={handler}></PrevArrow>}
       >

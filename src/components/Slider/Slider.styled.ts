@@ -1,14 +1,6 @@
 import styled from 'styled-components';
 import arrow from '../../assets/images/slider/slider-arrow.svg';
 
-export const Dot = styled.button`
-  width: 8px;
-  height: 8px;
-  border: none;
-  border-radius: 50%;
-  background: ${({ theme }) => theme.colors.secondary};
-`;
-
 export const SliderEl = styled.div`
   .carousel-slider {
     display: grid;
@@ -53,13 +45,6 @@ export const SliderEl = styled.div`
   .carousel-slider .control-dots .dot.selected {
     background: ${({ theme }) => theme.colors.secondary};
   }
-`;
-
-export const SlideNumber = styled.p`
-  font-size: 16px;
-  line-height: 40px;
-  text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.secondary}; ;
 `;
 
 let arrowWidth = 20;
