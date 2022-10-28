@@ -45,6 +45,14 @@ export const SliderEl = styled.div`
     display: flex;
     column-gap: 10px;
   }
+  .carousel-slider .control-dots .dot {
+    background: ${({ theme }) => theme.colors.accentLL};
+    opacity: 1;
+    margin: 0;
+  }
+  .carousel-slider .control-dots .dot.selected {
+    background: ${({ theme }) => theme.colors.secondary};
+  }
 `;
 
 export const SlideNumber = styled.p`

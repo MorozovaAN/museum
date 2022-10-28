@@ -13,11 +13,11 @@ export const Slider = () => {
       <Carousel
         renderThumbs={() => []}
         statusFormatter={(currentItem, total) => `0${currentItem} ❘ 0${total}`}
-        renderIndicator={(handler) => (
-          <li>
-            <Dot onClick={handler}></Dot>
-          </li>
-        )}
+        // renderIndicator={(handler) => (
+        //   <li>
+        //     <Dot onClick={handler}></Dot>
+        //   </li>
+        // )}
         renderArrowNext={(handler) => <NexArrow onClick={handler}></NexArrow>}
         renderArrowPrev={(handler) => <PrevArrow onClick={handler}></PrevArrow>}
       >
