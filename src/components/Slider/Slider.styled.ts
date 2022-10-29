@@ -6,6 +6,7 @@ export const SliderEl = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 40px;
+    row-gap: 20px;
   }
 
   .slider-wrapper {
@@ -41,9 +42,14 @@ export const SliderEl = styled.div`
     background: ${({ theme }) => theme.colors.accentLL};
     opacity: 1;
     margin: 0;
+    transition: background 0.3s ease-in;
+  }
+  .carousel-slider .control-dots .dot:hover {
+    background: ${({ theme }) => theme.colors.accentLD};
   }
   .carousel-slider .control-dots .dot.selected {
     background: ${({ theme }) => theme.colors.secondary};
+    cursor: default;
   }
 `;
 
@@ -55,7 +61,7 @@ const SliderArrow = styled.button`
   width: ${arrowWidth}px;
   height: 8px;
   border: none;
-  margin-top: 4px;
+  padding: 8px 12px;
   cursor: pointer;
 `;
 
@@ -69,5 +75,5 @@ export const NexArrow = styled(SliderArrow)`
   grid-column: 3/4;
   justify-self: start;
   transform: rotate(180deg);
-  margin-left: calc(${arrowWidth}px + 15px);
+  margin-left: calc(${arrowWidth}px + 13px);
 `;
