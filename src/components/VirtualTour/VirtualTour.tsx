@@ -1,10 +1,15 @@
-import { Title } from '../common/Title/Title';
+import { Container } from '../../common/styles/Container.styled';
+import { Title } from '../../common/styles/Title.styled';
 import { VirtualTourEl } from './VirtualTour.styled';
 
 export const VirtualTour = () => {
   return (
     <VirtualTourEl>
-      <Title text="Virtual tour" color="accentLL" />
+      <Container>
+        <Title color="accentLL" fz="l">
+          Virtual tour
+        </Title>
+      </Container>
     </VirtualTourEl>
   );
 };

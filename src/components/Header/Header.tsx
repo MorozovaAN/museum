@@ -1,11 +1,16 @@
-import { Logo } from '../common/Logo/Logo';
-import { HeaderEl, MenuIcon } from './Header.styled';
+import { Logo } from '../../common/components/Logo/Logo';
+import { Container } from '../../common/styles/Container.styled';
+import { HeaderEl, MenuIcon, HeaderWrapper } from './Header.styled';
 
 export const Header = () => {
   return (
     <HeaderEl>
-      <Logo title="Louvre" />
-      <MenuIcon />
+      <Container>
+        <HeaderWrapper>
+          <Logo title="Louvre" />
+          <MenuIcon />
+        </HeaderWrapper>
+      </Container>
     </HeaderEl>
   );
 };

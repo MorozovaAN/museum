@@ -51,29 +51,38 @@ export const SliderEl = styled.div`
     background: ${({ theme }) => theme.colors.secondary};
     cursor: default;
   }
+
+  .carousel .thumbs-wrapper {
+    margin: 0;
+  }
+
+  padding-bottom: 20px;
 `;
 
 let arrowWidth = 20;
 const SliderArrow = styled.button`
   grid-row: 2/3;
   align-self: center;
+  justify-self: start;
   background: url(${arrow}) no-repeat center;
   width: ${arrowWidth}px;
   height: 8px;
   border: none;
   padding: 8px 12px;
   cursor: pointer;
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
 `;
 
 export const PrevArrow = styled(SliderArrow)`
   grid-column: 3/4;
-  justify-self: start;
   margin-right: 10px;
 `;
 
 export const NexArrow = styled(SliderArrow)`
   grid-column: 3/4;
-  justify-self: start;
   transform: rotate(180deg);
   margin-left: calc(${arrowWidth}px + 13px);
 `;

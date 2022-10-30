@@ -13,8 +13,12 @@ export const Slider = () => {
       <Carousel
         renderThumbs={() => []}
         statusFormatter={(currentItem, total) => `0${currentItem} ❘ 0${total}`}
-        renderArrowNext={(handler) => <NexArrow onClick={handler}></NexArrow>}
-        renderArrowPrev={(handler) => <PrevArrow onClick={handler}></PrevArrow>}
+        renderArrowNext={(handler, hasNext) => (
+          <NexArrow disabled={!hasNext} onClick={handler}></NexArrow>
+        )}
+        renderArrowPrev={(handler, hasPrev) => (
+          <PrevArrow disabled={!hasPrev} onClick={handler}></PrevArrow>
+        )}
       >
         <div>
           <img src={slide1} alt="Mona Lisa" />

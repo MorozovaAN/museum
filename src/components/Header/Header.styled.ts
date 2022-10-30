@@ -1,18 +1,20 @@
 import styled from 'styled-components';
 
 export const HeaderEl = styled.header`
-  background: ${(props) => props.theme.colors.primary};
-  min-height: 90px;
+  background: ${({ theme }) => theme.colors.primary};
+`;
+
+export const HeaderWrapper = styled.div`
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
 `;
 
 export const MenuIcon = styled.div`
   width: 32px;
   height: 2px;
-  background: ${(props) => props.theme.colors.secondary};
+  background: ${({ theme }) => theme.colors.secondary};
   position: relative;
 
   &::after,
@@ -21,7 +23,7 @@ export const MenuIcon = styled.div`
     content: '';
     width: 32px;
     height: 2px;
-    background: ${(props) => props.theme.colors.secondary};
+    background: ${({ theme }) => theme.colors.secondary};
   }
 
   &::after {
