@@ -20,10 +20,10 @@ body{
 
 export const theme = {
   colors: {
-    primary: '#030303',
-    secondary: '#FFFFFF',
-    accentLL: '#9D8665', //accent light light
-    accentLD: '#7E6C51', //accent light dark
-    accentD: '#710707', //accent dark
+    primary: '#030303', //black
+    secondary: '#FFFFFF', //white
+    accentLL: '#9D8665', //brown light
+    accentLD: '#7E6C51', //brown dark
+    accentD: '#710707', //red
   },
 };

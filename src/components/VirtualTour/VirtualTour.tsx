@@ -4,7 +4,7 @@ import { VirtualTourEl } from './VirtualTour.styled';
 export const VirtualTour = () => {
   return (
     <VirtualTourEl>
-      <Title text="Virtual tour" />
+      <Title text="Virtual tour" color="accentLL" />
     </VirtualTourEl>
   );
 };

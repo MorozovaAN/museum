@@ -7,5 +7,7 @@ export const TitleEl = styled.h2`
   font-size: 28px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.accentLL};
+  color: ${(props) => {
+    if (props.color) return props.theme.colors[props.color];
+  }};
 `;

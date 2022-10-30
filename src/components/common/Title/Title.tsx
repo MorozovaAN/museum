@@ -1,5 +1,9 @@
 import { TitleEl } from './Title.styled';
 
-export const Title = ({ text }: { text: string }) => {
-  return <TitleEl>{text}</TitleEl>;
+type TitleType = {
+  text: string;
+  color: string;
+};
+export const Title: React.FC<TitleType> = ({ text, color }) => {
+  return <TitleEl color={color}>{text}</TitleEl>;
 };
