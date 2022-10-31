@@ -30,6 +30,7 @@ export const theme = {
     l: '28px',
     m: '22px',
     s: '18px',
+    xs: '16px',
   },
 
   fw: {
@@ -38,5 +39,10 @@ export const theme = {
     regular: '400',
     medium: '500',
     bold: '700',
+  },
+
+  size: {
+    l: '40px',
+    m: '20px',
   },
 };

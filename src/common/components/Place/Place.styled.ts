@@ -1,2 +1,4 @@
 import styled from 'styled-components';
-export const p = styled.div``;
+
+export const PlaceEl = styled.article`
+`;
