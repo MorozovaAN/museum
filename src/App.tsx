@@ -10,8 +10,10 @@ const App = () => {
       <GlobalStyles />
 
       <Header />
-      <Promo />
-      <VirtualTour />
+      <main>
+        <Promo />
+        <VirtualTour />
+      </main>
     </ThemeProvider>
   );
 };

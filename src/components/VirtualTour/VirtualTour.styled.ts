@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const VirtualTourEl = styled.section`
   color: ${({ theme }) => theme.colors.secondary};
-  padding-top: ${({ theme }) => theme.size.l};
+  padding: ${({ theme }) => theme.size.l} 0;
 `;
 
 export const FlexContainer = styled.div`
