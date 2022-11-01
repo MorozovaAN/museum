@@ -5,7 +5,7 @@ export const ExploreEl = styled.section`
   padding: ${({ theme }) => theme.size.l} 0;
 `;
 
-export const Slider = styled.div`
+export const SliderWrapper = styled.div`
   margin-top: ${({ theme }) => theme.size.l};
   border-top: 3px solid #710707;
   padding-top: 40px;

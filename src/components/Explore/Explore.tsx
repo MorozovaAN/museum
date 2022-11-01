@@ -7,7 +7,7 @@ import before from '../../assets/images/before.jpg';
 import after from '../../assets/images/after.jpg';
 import { Container } from '../../common/styles/Container.styled';
 import { Title } from '../../common/styles/Title.styled';
-import { ExploreEl, Slider } from './Explore.styled';
+import { ExploreEl, SliderWrapper } from './Explore.styled';
 
 export const Explore = () => {
   return (
@@ -16,7 +16,7 @@ export const Explore = () => {
         <Title color="secondary" fz="l">
           Picture explore
         </Title>
-        <Slider>
+        <SliderWrapper>
           <ReactCompareSlider
             onlyHandleDraggable
             handle={
@@ -45,7 +45,7 @@ export const Explore = () => {
               />
             }
           />
-        </Slider>
+        </SliderWrapper>
       </Container>
     </ExploreEl>
   );
