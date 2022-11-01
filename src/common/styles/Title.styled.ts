@@ -3,10 +3,10 @@ import styled, { css } from 'styled-components';
 export const Title = styled.h2<{ fz: string }>`
   font-family: 'Forum';
   font-weight: 400;
-  font-size: ${(props) => props.fz && props.theme.fz[props.fz]};
+  font-size: ${({ theme, fz }) => fz && theme.fz[fz]};
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: ${(props) => props.color && props.theme.colors[props.color]};
+  color: ${({ theme, color }) => color && theme.colors[color]};
 `;
 
 export const TitleUnderline = styled(Title)`

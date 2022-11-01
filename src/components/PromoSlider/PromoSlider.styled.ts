@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import arrow from '../../assets/images/slider/slider-arrow.svg';
 
-export const SliderEl = styled.div`
+export const PromoSliderEl = styled.div`
   .carousel-slider {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
