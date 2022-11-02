@@ -1,22 +1,21 @@
 import { Container } from '../../common/styles/Container.styled';
 import { Title } from '../../common/styles/Title.styled';
-import { VideoEl, Video } from './VideoJourney.styled';
+import { Video } from '../Video/Video';
+import { VideoJourneyEl } from './VideoJourney.styled';
 
 export const VideoJourney = () => {
   return (
-    <VideoEl>
+    <VideoJourneyEl>
       <Container>
         <Title color="accentLL" fz="l">
           Video journey
         </Title>
 
-        <Video>
-          <iframe
-            src="https://www.youtube.com/embed/zp1BXPX8jcU"
-            title="Welcome to the Louvre - Bienvenue au Louvre - Musée du Louvre"
-          ></iframe>
-        </Video>
+        <Video
+          src="https://www.youtube.com/embed/zp1BXPX8jcU"
+          title="Welcome to the Louvre - Bienvenue au Louvre - Musée du Louvre"
+        />
       </Container>
-    </VideoEl>
+    </VideoJourneyEl>
   );
 };
