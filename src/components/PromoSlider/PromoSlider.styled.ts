@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import arrow from '../../assets/images/slider/slider-arrow.svg';
+import arrow from '../../assets/images/promo-slider/slider-arrow.svg';
 
 export const PromoSliderEl = styled.div`
   .carousel-slider {

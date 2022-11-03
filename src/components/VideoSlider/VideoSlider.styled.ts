@@ -4,10 +4,12 @@ import arrowNext from '../../assets/images/video-slider-arrow-next.svg';
 
 export const Wrapper = styled.div`
   .mySwiper .swiper-slide {
-    opacity: 0.4;
+    opacity: 0.7;
+    filter: blur(1px);
   }
   .mySwiper .swiper-slide-thumb-active {
     opacity: 1;
+    filter: none;
   }
   .arrow-prev {
     width: 9px;

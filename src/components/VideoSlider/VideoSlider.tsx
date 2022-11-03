@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Video } from '../Video/Video';
+import { Video } from '../../common/components/Video/Video';
 import { Controls, Wrapper } from './VideoSlider.styled';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -30,6 +30,10 @@ export const VideoSlider = () => {
     {
       src: 'https://www.youtube.com/embed/xAsQrZ9s-dE',
       title: "Au Louvre ! Femmes d'Alger dans leur appartement",
+    },
+    {
+      src: 'https://www.youtube.com/embed/n8lY_lm_BmA',
+      title: 'Au Louvre ! La salle des Etats',
     },
   ];
 
