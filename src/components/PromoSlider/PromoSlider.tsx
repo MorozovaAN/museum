@@ -1,8 +1,8 @@
-import slide1 from '../../assets/images/slider/1.webp';
-import slide2 from '../../assets/images/slider/2.webp';
-import slide3 from '../../assets/images/slider/3.webp';
-import slide4 from '../../assets/images/slider/4.webp';
-import slide5 from '../../assets/images/slider/5.webp';
+import slide1 from '../../assets/images/promo-slider/1.webp';
+import slide2 from '../../assets/images/promo-slider/2.webp';
+import slide3 from '../../assets/images/promo-slider/3.webp';
+import slide4 from '../../assets/images/promo-slider/4.webp';
+import slide5 from '../../assets/images/promo-slider/5.webp';
 
 import { NexArrow, PrevArrow, PromoSliderEl } from './PromoSlider.styled';
 

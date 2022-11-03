@@ -3,8 +3,8 @@ import {
   ReactCompareSliderHandle,
   ReactCompareSliderImage,
 } from 'react-compare-slider';
-import before from '../../assets/images/before.jpg';
-import after from '../../assets/images/after.jpg';
+import before from '../../assets/images/las-meninas-picture-before.jpg';
+import after from '../../assets/images/las-meninas-picture-after.jpg';
 import { Container } from '../../common/styles/Container.styled';
 import { Title } from '../../common/styles/Title.styled';
 import { ExploreEl, SliderWrapper } from './Explore.styled';

@@ -3,11 +3,10 @@ import styled from 'styled-components';
 export const VideoEl = styled.div`
   margin-top: ${({ theme }) => theme.size.m};
   position: relative;
-  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
-  height: 0;
-  overflow: hidden;
+  aspect-ratio: 16/9;
 
   iframe {
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
