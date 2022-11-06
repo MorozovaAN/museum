@@ -11,25 +11,56 @@ export const Wrapper = styled.div`
     opacity: 1;
     filter: none;
   }
+
   .arrow-prev {
     width: 9px;
-    height: 11px;
+    height: 10px;
     border: none;
     background: url(${arrowPrev}) no-repeat;
     background-size: contain;
     cursor: pointer;
+    position: relative;
   }
+  .arrow-prev:after {
+    content: '';
+    width: 21px;
+    height: 22px;
+    background: transparent;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+  }
+
   .arrow-next {
     width: 9px;
-    height: 11px;
+    height: 10px;
     border: none;
     background: url(${arrowNext}) no-repeat;
     background-size: contain;
     cursor: pointer;
+    position: relative;
   }
-  .arrow-next:active {
+  .arrow-next:after {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 22px;
+    background: transparent;
+    top: -5px;
+    right: -5px;
+  }
+
+  .arrow-prev:disabled,
+  .arrow-next:disabled {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+  }
+  .arrow-next:active,
+  .arrow-prev:active {
     filter: brightness(0.2);
   }
+
   .custom-pagination {
     width: fit-content;
     display: flex;
@@ -43,6 +74,16 @@ export const Wrapper = styled.div`
     border-radius: 50%;
     transition: 0.3s ease-in;
     cursor: pointer;
+    position: relative;
+  }
+  .custom-bullet:after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: transparent;
+    top: -5px;
+    right: -6px;
   }
   .custom-bullet-active {
     background: ${({ theme }) => theme.colors.primary};

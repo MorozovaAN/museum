@@ -50,6 +50,7 @@ export const VideoSlider = () => {
         navigation={{
           prevEl: '.arrow-prev',
           nextEl: '.arrow-next',
+          disabledClass: '.arrow-disabled',
         }}
         pagination={{
           el: '.custom-pagination',
