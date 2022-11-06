@@ -1,13 +1,14 @@
 import { Place } from '../../common/components/Place/Place';
 import { Container } from '../../common/styles/Container.styled';
 import { Title } from '../../common/styles/Title.styled';
-import { FlexContainer, VirtualTourEl } from './VirtualTour.styled';
+import { Places, VirtualTourEl } from './VirtualTour.styled';
 import royalPalace from '../../assets/images/virtual-tour/royal-palace.svg';
 import denonWing from '../../assets/images/virtual-tour/denon-wing.svg';
 import colonnadePerrault from '../../assets/images/virtual-tour/colonnade-perrault.svg';
 import greekHall from '../../assets/images/virtual-tour/greek-hall.svg';
 import monaLisa from '../../assets/images/virtual-tour/mona-lisa.svg';
 import nightPalace from '../../assets/images/virtual-tour/night-palace.svg';
+import { FlexContainer } from '../../common/styles/FlexContainer.styled';
 
 export const VirtualTour = () => {
   const places = [
@@ -49,12 +50,14 @@ export const VirtualTour = () => {
         <Title color="accentLL" fz="l">
           Virtual tour
         </Title>
-        <FlexContainer>
-          
-          {places.map((p) => (
-            <Place link={p.link} imageSrc={p.imageSrc} title={p.title} />
-          ))}
-        </FlexContainer>
+
+        <Places>
+          <FlexContainer fd="column" rgap="l">
+            {places.map((p) => (
+              <Place link={p.link} imageSrc={p.imageSrc} title={p.title} />
+            ))}
+          </FlexContainer>
+        </Places>
       </Container>
     </VirtualTourEl>
   );

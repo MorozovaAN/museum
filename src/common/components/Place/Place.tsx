@@ -1,6 +1,6 @@
 import { Text } from '../../styles/Text.styled';
 import { TitleUnderline } from '../../styles/Title.styled';
-import { ImageBlock, Link, PlaceEl } from './Place.styled';
+import { Image, Link, PlaceEl } from './Place.styled';
 
 type PlaceType = {
   link: string;
@@ -12,9 +12,9 @@ export const Place: React.FC<PlaceType> = ({ link, imageSrc, title }) => {
   return (
     <PlaceEl>
       <Link href={link} target="_blanc" aria-label="link to google maps">
-        <ImageBlock>
+        <Image>
           <img src={imageSrc} alt={title} />
-        </ImageBlock>
+        </Image>
 
         <TitleUnderline color="primary" fz="s">
           {title}

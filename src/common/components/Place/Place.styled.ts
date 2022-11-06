@@ -3,7 +3,7 @@ import { TitleUnderline } from '../../styles/Title.styled';
 
 export const PlaceEl = styled.article``;
 
-export const ImageBlock = styled.div`
+export const Image = styled.div`
   margin-bottom: 25px;
   overflow: hidden;
 
@@ -20,8 +20,8 @@ export const Link = styled.a`
     width: 100%;
     transition: 0.8s;
   }
-  &:hover ${ImageBlock} img,
-  &:focus ${ImageBlock} img {
+  &:hover ${Image} img,
+  &:focus ${Image} img {
     filter: brightness(120%);
     transform: scale(1.2);
     outline: none;

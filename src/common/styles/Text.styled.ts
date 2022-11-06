@@ -1,10 +1,19 @@
 import styled from 'styled-components';
 
-export const Text = styled.p<{ fz: string; fw: string; mt?: string }>`
+type TextType = {
+  color: string;
+  fz: string;
+  fw: string;
+  ls?: string;
+  mt?: string;
+};
+
+export const Text = styled.p<TextType>`
   font-family: 'Roboto';
   font-style: normal;
   font-weight: ${({ fw, theme }) => fw && theme.fw[fw]};
-  font-size: ${(props) => props.fz && props.theme.fz[props.fz]};
-  color: ${(props) => props.color && props.theme.colors[props.color]};
+  font-size: ${({ fz, theme }) => fz && theme.fz[fz]};
+  color: ${({ color, theme }) => color && theme.colors[color]};
+  letter-spacing: ${({ ls }) => ls || "normal"};
   margin-top: ${({ mt }) => mt || 0};
 `;

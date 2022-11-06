@@ -5,12 +5,8 @@ export const VirtualTourEl = styled.section`
   padding: ${({ theme }) => theme.size.l} 0;
 `;
 
-export const FlexContainer = styled.div`
+export const Places = styled.div`
   margin-top: ${({ theme }) => theme.size.l};
-  display: flex;
-  flex-direction: column;
-  row-gap: ${({ theme }) => theme.size.l};
-  align-items: center;
   border-top: 3px solid ${({ theme }) => theme.colors.accentD};
   padding-top: ${({ theme }) => theme.size.l};
 `;

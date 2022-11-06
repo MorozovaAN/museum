@@ -10,25 +10,28 @@ import { Title } from '../../common/styles/Title.styled';
 import { ExploreEl, SliderWrapper } from './Explore.styled';
 
 export const Explore = () => {
+  const buttonStyles = {
+    WebkitBackdropFilter: 'none',
+    backdropFilter: 'none',
+    border: '3px solid #fff',
+    boxShadow: 'none',
+    width: '24px',
+    height: '24px',
+  };
+
   return (
     <ExploreEl>
       <Container>
         <Title color="secondary" fz="l">
           Picture explore
         </Title>
+        
         <SliderWrapper>
           <ReactCompareSlider
             onlyHandleDraggable
             handle={
               <ReactCompareSliderHandle
-                buttonStyle={{
-                  WebkitBackdropFilter: 'none',
-                  backdropFilter: 'none',
-                  border: '3px solid #fff',
-                  boxShadow: 'none',
-                  width: '24px',
-                  height: '24px',
-                }}
+                buttonStyle={buttonStyles}
                 linesStyle={{ width: '3px' }}
               />
             }
